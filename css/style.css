@@ -10,7 +10,7 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .login-register {
@@ -27,24 +27,101 @@ form {
 }
 
 header {
-  background-color: rgb(155, 155, 155);
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #1f1e1e;
+  padding: 15px 40px;
 }
 
 .arriba {
-  margin-bottom: 5px; }
-
-
-.logo {
-  width: 180px;
-  height: auto;
-  margin-top: -20px;
-  margin-bottom: -20px;
-  margin-left: 250px;
+  display: flex;
+  align-items: center;
 }
+
+
+
+.logo-texto {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+
+
+
+
+.padre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #f5f3f0;
+  gap: 40px;
+}
+
+.hijotexto h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hijotexto p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.boton {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+}
+
+.hero-imagen img {
+  width: 350px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+.franja-categorias {
+  background-color: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 20px;
+  border-radius: 20px;
+}
+
+.franja-categorias h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.categorias ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.categorias a {
+  color: white;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+
+
+
+
+
+
 
 .productos-random {
   display: flex;
@@ -76,6 +153,9 @@ border-color: black;
     margin-bottom: 10px;
 }
 
+
+
+
 .ver-detalle {
   display: flex;
   margin-top: 10px;
@@ -87,6 +167,12 @@ justify-content: center;
 }
 
 
+
+
+
+
+
+
 .productos-aleatorios {
   text-align: center;
   margin-bottom: 20px;
@@ -94,7 +180,7 @@ justify-content: center;
   font-weight: bold;
 }
 
-body{ background-color: #f8f6f6; }
+body{ background-color: #f6f3f3; }
 
 
 .mas-vendidos {
@@ -141,9 +227,16 @@ border-color: black;
 }
 
 
+
+
+
+
+
+
 footer {
-  background-color: rgb(155, 155, 155);
+  background-color: #1f1e1e;
   padding: 10px;
   text-align: center;
   margin-top: 20px;
+color: #fff;
 }
