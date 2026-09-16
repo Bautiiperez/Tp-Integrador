@@ -252,3 +252,38 @@ color: #fff;
   min-height: 100vh;
 
 }
+
+.detalle-producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.detalle-producto img {
+  width: 410px; 
+  height: auto;
+}
+
+.info-producto {
+  max-width: 700px;
+}
+
+.info-producto p {
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tags li {
+  background-color: rgb(103, 97, 97);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.reviews {
+
+}
