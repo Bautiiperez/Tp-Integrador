@@ -15,15 +15,18 @@ a {
 
 .login-register {
   display: flex;
-  justify-content: flex-end;
-  gap: 15px; }
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
 
 
 
 .buscador {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+   gap : 10px;
+  margin-top: 20px;
+  max-height: 20px;
+  align-items: center;
 }
 
 header {
