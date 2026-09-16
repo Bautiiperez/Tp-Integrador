@@ -285,5 +285,15 @@ color: #fff;
 }
 
 .reviews {
+  margin-top: 30px;
+  padding: 20px;
+}
 
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
 }
