@@ -248,7 +248,10 @@ color: #fff;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
 
+.linkOscuro {
+  color: #000;
 }
 
 .detalle-producto {
