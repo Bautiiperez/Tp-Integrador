@@ -110,7 +110,13 @@ header {
   font-size: 26px;
 }
 
-.layoutIndex {
+.sin-resultados {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+.layoutPagina {
   display: flex;
   margin-top: 80px;
 }
@@ -297,4 +303,15 @@ color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   background-color: #f9f9f9;
+}
+
+/*Media queries para celular*/
+@media (max-width: 768px) {
+  .layoutPagina{
+    flex-direction: column;
+  }
+  .padre {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
