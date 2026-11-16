@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head> 
+
 <body>
      <header>
     
@@ -59,8 +60,9 @@
   </nav>
 </aside>
 <section class="columnaTitulo form-page">
-    <form action="./index.html" method="get">
-        <div>
+    <form class="formlogin" action="./index.html" method="get">
+        <form action="./index.html" method="get" class="formlogin">
+      <div>
             <input type="email" name="email" placeholder="Ingresá tu email">
         </div>
         <div>
@@ -72,6 +74,8 @@
         <div>
             <a class="linkOscuro" href="./register.html">No tengo cuenta</a>
         </div>
+        <p class="error"></p>
+    
     </form>
     </section>
 </main>
@@ -79,6 +83,6 @@
 <footer>
   <p> Integrantes: Jokin, Bautista, Facundo</p>
 </footer>
-
+<script src="./js/login.js"></script>
 </body>
 </html>
