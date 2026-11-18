@@ -7,15 +7,9 @@ let linkLogout = document.querySelector(".logout");
 
 console.log(email);
 
-if (email == "") {
+if (email != null) {
   saludo.innerText = "Bienvenido: " + email;
   linkLogin.style.display = "none";
   linkRegister.style.display = "none";
   linkLogout.style.display = "inline";
 } 
-else {
-  saludo.innerText = "Bienvenido: " + email;
-  linkLogin.style.display = "inline";
-  linkRegister.style.display = "inline";
-  linkLogout.style.display = "none";
-}
