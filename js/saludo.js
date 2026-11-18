@@ -7,7 +7,7 @@ let linkLogout = document.querySelector(".logout");
 
 console.log(email);
 
-if (email == null) {
+if (email == "") {
   saludo.innerText = "Bienvenido: " + email;
   linkLogin.style.display = "none";
   linkRegister.style.display = "none";
