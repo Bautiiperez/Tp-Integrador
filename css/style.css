@@ -151,19 +151,22 @@ width: 550px;
   gap: 15px;
   justify-content: center;
   width: 100%;
+  min-height: 400px;
 }
 
 
 .productos-random article {
- width: 170px;
- border-width: 1px;
-border-style: solid;
-border-color: black;
+  width: 170px;
+  min-height: 450px;
+  border: 1px solid black;
   border-radius: 8px;
   padding: 10px;
   background-color: #aaa4a4;
-  height: 450px;
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 
 .productos-random img {
@@ -179,18 +182,17 @@ border-color: black;
 
 
 
-
 .ver-detalle {
   display: flex;
-  margin-top: 10px;
-  color: #000;
+  justify-content: center;
+  margin-top: auto;
+  padding: 8px 16px;
+  background-color: #2b2b2b;
+  color: #fff;
   font-weight: bold;
-justify-content: center;
-
-
+  text-decoration: none;
+  border-radius: 8px;
 }
-
-
 
 
 
@@ -217,14 +219,14 @@ width: 100%;
 }
 
 .mas-vendidos article {
- width: 170px;
- border-width: 1px;
-border-style: solid;
-border-color: black;
+  width: 170px;
+  min-height: 450px;
+  border: 1px solid black;
   border-radius: 8px;
   padding: 10px;
   background-color: #aaa4a4;
-  height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 

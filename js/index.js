@@ -51,3 +51,4 @@ fetch("https://dummyjson.com/products/category/kitchen-accessories")
 .catch(function(error) {
   console.log("Error: " + error);
 });
+
