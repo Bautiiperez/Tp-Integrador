@@ -5,4 +5,4 @@ linkLogout.addEventListener("click", function(e){
     linkLogout.style.display = "none";
     linkLogin.style.display = "inline"; 
     linkRegister.style.display = "inline";
-})
+})                     
