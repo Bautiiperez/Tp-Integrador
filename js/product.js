@@ -22,13 +22,25 @@ fetch(`https://dummyjson.com/products/${idProducto}`)
         console.log("Datos del producto:", data);
 
         
-        imgProducto.src = data.images && data.images.length > 0 ? data.images[0] : data.thumbnail;
+        if (data.images && data.images.length > 0) {
+            imgProducto.src = data.images[0];
+        } else {
+            imgProducto.src = data.thumbnail;
+        }
         imgProducto.alt = data.title;
+
+        
         tituloProducto.innerText = data.title;
-        marcaProducto.innerText = "Marca: " + (data.brand ? data.brand : "Genérica");
-        precioProducto.innerText = "Precio: $" + data.price;
+        precioProducto.innerText = `Precio: $${data.price}`;
         descripcionProducto.innerText = data.description;
-        stockProducto.innerText = "Stock disponible: " + data.stock + " unidades";
+        stockProducto.innerText = `Stock disponible: ${data.stock} unidades`;
+
+        
+        if (data.brand) {
+            marcaProducto.innerText = `Marca: ${data.brand}`;
+        } else {
+            marcaProducto.innerText = "Marca: Genérica";
+        }
 
         
         categoriaProducto.innerText = data.category;
@@ -41,16 +53,15 @@ fetch(`https://dummyjson.com/products/${idProducto}`)
         }
         listaTags.innerHTML = htmlTags;
 
-        
+       
         let htmlReviews = "";
         if (data.reviews && data.reviews.length > 0) {
             for (let i = 0; i < data.reviews.length; i++) {
                 let review = data.reviews[i];
-                
-                let fechaLimpia = review.date ? review.date.slice(0, 10) : "Sin fecha";
+                let fechaLimpia = review.date.slice(0, 10);
 
                 htmlReviews += `
-                    <article>
+                    <article class="review">
                         <p><strong>${review.reviewerName}</strong> - <span>${fechaLimpia}</span></p>
                         <p>Calificación: ${review.rating} / 5 ⭐</p>
                         <p>${review.comment}</p>
@@ -64,5 +75,5 @@ fetch(`https://dummyjson.com/products/${idProducto}`)
         listaReviews.innerHTML = htmlReviews;
     })
     .catch(function(error) {
-        console.log("Error al cargar el detalle del producto: " + error);
+        console.log("Error: " + error);
     });
