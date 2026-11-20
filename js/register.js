@@ -18,6 +18,7 @@ formulario.addEventListener("submit", function(evento) {evento.preventDefault();
     } else if (password.value !== confirmarPassword.value) {
         alert("Las contraseñas no son iguales");
     } else {
+        this.submit()
     window.location.href = "./login.html";
     }
 });

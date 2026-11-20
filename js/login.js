@@ -14,6 +14,7 @@ formlogin.addEventListener("submit", function(event) {
     error.textContent = "La contraseña debe tener al menos 6 caracteres";
   } else {
     localStorage.setItem("email", inputEmail.value);
+    this.submit();
     location.href = "index.html";
   }
 })
