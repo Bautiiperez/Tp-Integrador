@@ -22,7 +22,7 @@
               <a class="logout" href="#">logout</a>
       </nav>
 
-      <form action="./resultados.html" method="get" class="buscador">  
+<form action="./search-results.html" method="get" class="buscador">
         <input type="text" name="search" placeholder="Buscar...">
         <button type="submit">Buscar</button>
       </form>
@@ -61,20 +61,18 @@
   </nav>
 </aside>
 
+
 <section class="columnaTitulo">
-      <h1 class="franja">Resultados de busqueda: <b>YSL</b></h1>
-      <section class="productos-random">
-        <article> 
-          <img src="./img/ysl.png" alt="ysl y eau de parfum"> 
-          <h3>YSL Y Eau de Parfum 100ml</h3> 
-          <p>Perfume masculino fresco y aromático, con notas de manzana, jengibre, salvia y maderas. Ideal para todos los días.</p> 
-          <p class="precio">$135</p> 
-          <a href="./product.html" class="ver-detalle">Ver detalle</a> 
-        </article>
-      </section>
-          <p class="sin-resultados">No se encontraron productos que coincidan con tu búsqueda.</p>
+
+    <h1 class="franja" id="tituloBusqueda"> Resultados de búsqueda </h1>
+
+    <section class="productos-random" id="resultadosProductos">
+    </section>
+
+    <p class="sin-resultados" id="sinResultados"></p>
 
 </section>
+
 
     </main>
 
@@ -82,6 +80,8 @@
       <p> Integrantes: Jokin, Bautista, Facundo</p>
     </footer>
 
+
+<script src="./js/search-results.js"></script>
 <script src="./js/category.js"></script>
 <script src="./js/saludo.js"></script>
 <script src="./js/logout.js"></script>
