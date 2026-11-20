@@ -61,35 +61,43 @@
     </ul>
   </nav>
 </aside>-->
+
 <section class="columnaTitulo form-page">
-    <form action="./login.html" method="get">
+    <form action="./login.html" method="get" id="formRegistro">
         <div>
-             <input type="email" name="email" placeholder="Ingresá tu email">
+        <input type="email" name="email" id="email" placeholder="Ingresá tu email">
         </div>
+
         <div>
-             <input type="password" name="password" placeholder="Ingrese su contraseña">
+        <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
         </div>
+
         <div>
-             <input type="password" name="confirmar-password" placeholder="Confirme su contraseña">
+        <input type="password" name="confirmar-password" id="confirmarPassword" placeholder="Confirme su contraseña">
         </div>
+
         <div>
-            <input type="checkbox" name="terminos" id="Terminos">
-            <label for="Terminos">Acepto terminos y condiciones</label>
+        <input type="checkbox" name="terminos" id="Terminos">
+        <label for="Terminos">Acepto términos y condiciones</label>
         </div>
+
         <div>
-            <button type="submit">Registrarme</button>
+          <button type="submit">Registrarme</button>
         </div>
+
         <div>
-            <a class="linkOscuro" href="./login.html">Ya tengo cuenta</a>
+        <a class="linkOscuro" href="./login.html">Ya tengo una cuenta</a>
         </div>
     </form>
 </section>
+
 </main>
 
 <footer>
   <p> Integrantes: Jokin, Bautista, Facundo</p>
 </footer>
 
+<script src="./js/register.js"></script>
 <script src="./js/category.js"></script>
 <script src="./js/buscador.js"></script>
 
